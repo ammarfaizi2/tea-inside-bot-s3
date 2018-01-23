@@ -1,0 +1,13 @@
+{
+    "name": "root/nbn",
+    "type": "project",
+    "license": "l",
+    "authors": [
+        {
+            "name": "Ammar Faizi",
+            "email": "ammarfaizi2@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
