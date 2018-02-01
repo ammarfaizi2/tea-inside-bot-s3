@@ -15,6 +15,8 @@ class Event implements ArrayAccess
 	protected function __construct($in)
 	{
 		$this['input'] = json_decode($in, true);
-		$this['msg_type'] = isset($input['message'])
+		if (isset($this['message'])) {
+			# code...
+		}
 	}
 }
