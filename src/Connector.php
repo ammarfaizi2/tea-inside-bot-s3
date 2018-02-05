@@ -4,7 +4,7 @@ class Connector
 {
 	public static function run()
 	{
-        shell_exec(PHP_BINARY.' "'.CONNECTOR_DIR.'/background.php" "'.urlencode(
+        print shell_exec(PHP_BINARY.' "'.CONNECTOR_DIR.'/background.php" "'.urlencode(
 
             '{
     "update_id": 344653262,
@@ -30,7 +30,7 @@ class Connector
     }
 }'
 
-        /*file_get_contents('php://input')*/).'"');
+        /*file_get_contents('php://input')*/).'" 2>&1');
 
         exit();
 

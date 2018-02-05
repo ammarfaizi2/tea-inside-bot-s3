@@ -4,16 +4,22 @@ namespace Utils;
 
 trait ArrayUtils
 {
+	private $___r;
+
 	private $container = [];
 
 	public function __get($key)
 	{
-		return null;
+		return $this->___r;
 	}
 
 	public function &offsetGet($offset)
 	{
-		return array_key_exists($offset, $this->container) ? $this->container[$offset] : $this->r;
+		if (array_key_exists($offset, $this->container)) {
+			return $this->container[$offset];
+		} else {
+			return $this->___r;
+		}
 	}
 
 	public function offsetSet($offset, $value)

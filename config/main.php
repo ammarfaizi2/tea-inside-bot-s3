@@ -1,6 +1,6 @@
 <?php
 
-define('TOKEN', '466965678:AAGVOQjxD9zgOhw-KLZT6vAP1mSztE7y69U');
+define('TOKEN', '466965678:AAH__Cg3mqt3QjLh2f6GkKnOKTXbKtUowj8');
 
 define('BASEPATH', realpath(__DIR__.'/..'), true);
 define('STORAGE_PATH', BASEPATH.'/storage', true);
